@@ -1,10 +1,11 @@
-html {
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     background-size: cover;
     font-family: "Amiri";
-
+    direction: rtl;
+  
 }
 
 @font-face {
@@ -19,9 +20,7 @@ html {
     grid-column-gap: 0px;
     grid-row-gap: 5px;
 }
-a{
-    text-decoration: none;
-}
+
 .home {
     grid-area: 1 / 1 / 2 / 2;
     background-color: black;
@@ -47,3 +46,52 @@ a{
     background-color: coral;
 }
 
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+    margin: 0 auto;
+    height: 80px;
+}
+
+.navbar__item {
+    list-style-type: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.navbar__logolink {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__item:nth-child(1) {
+    padding: 0 30px;
+}
+
+.navbar__item {
+    padding: 0 0 0 30px;
+}
+
+.navbar__button {
+    background: black;
+    padding:10px;
+    border-radius:8px;
+    list-style-type: none;
+}
+
+.navbar__button .navbar__links {
+    color: white;
+
+}
