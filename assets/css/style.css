@@ -125,7 +125,7 @@ a {
     }
 
     .navbar__menu.active{
-        top:7%;
+        top:99%;
         opacity:1;
         transition:all 350ms ease;
         height: 60vh;
