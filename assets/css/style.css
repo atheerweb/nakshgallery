@@ -13,6 +13,7 @@
     font-family: "Amiri";
 }
 
+
 .page__holder {
     display: grid;
     grid-template-columns: 1fr;
@@ -47,7 +48,16 @@
     grid-area: 5 / 1 / 6 / 2;
     background-color: coral;
 }
-
+nav{
+    position:fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1300px;
+    height: 80px;
+    background-color: white;
+}
 .navbar__container {
     display: flex;
     justify-content: space-between;
@@ -134,10 +144,24 @@ a {
         background-color:black;
         height:3px;
         margin:5px auto;
-        
+        transition: all 350ms ease;
     }
+    #mobile-menu.isactive .bar{
+        transition: all 350ms ease;
+    }
+
     #mobile-menu{
         padding: 0 25px;
+        
+    }
+    #mobile-menu.isactive .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    #mobile-menu.isactive .bar:nth-child(2){
+        opacity:0;
+    }
+    #mobile-menu.isactive  .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
     }
    
 }
