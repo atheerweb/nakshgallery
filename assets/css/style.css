@@ -20,8 +20,6 @@
     grid-template-rows: repeat(4, 2fr) 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 5px;
-    width:100%;
-    max-width: 1300px;
 }
 
 .home {
@@ -54,7 +52,6 @@ nav{
     align-items: center;
     justify-content: center;
     width: 100%;
-    max-width: 1300px;
     height: 80px;
     background-color: white;
 }
@@ -67,6 +64,7 @@ nav{
     padding: 0 50px;
     margin: 0 auto;
     height: 80px;
+    font-size:1.3rem;
 }
 
 .navbar__item {
@@ -171,7 +169,12 @@ a {
     }
    
 }
-
+/*tablet queres*/
+@media screen and (max-width:769px){
+    .navbar__container{
+        font-size:40px;
+    }
+}
 /*mobile queres*/
 @media screen and (max-width:415px){
     .navbar__container{
