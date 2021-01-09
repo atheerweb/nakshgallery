@@ -326,21 +326,24 @@ a {
     .hero__descrip {
         font-size: 58px;
     }
-  
+
     .main__btn {
         font-size: 2.1rem;
         padding: 8px 25px;
     }
+
     .main__content h2 {
         font-size: 36px;
     }
+
     .main__content p {
         font-size: 30px;
     }
+
     .main__img--container {
         width: 100%;
         height: 345px;
-        margin:0;
+        margin: 0;
         margin-top: 100px;
     }
 }
@@ -354,7 +357,7 @@ a {
         font-size: 2.6rem;
     }
 
-    .hero__heading , 
+    .hero__heading,
     .main__container h1 {
         font-size: 64px;
 
@@ -363,19 +366,24 @@ a {
     .hero__descrip {
         font-size: 51px;
     }
-    .main__container{
-       justify-content:center;
+
+    .main__container {
+        justify-content: center;
     }
+
     .main__btn {
         font-size: 2rem;
         padding: 5px 20px;
     }
+
     .main__content h2 {
         font-size: 32px;
     }
+
     .main__content p {
         font-size: 26px;
     }
+
     .main__img--container {
         width: 100%;
         height: 294px;
@@ -420,7 +428,7 @@ a {
     .main__content p {
         font-size: 25px;
     }
-  
+
     .main__content h2 {
         font-size: 31px;
     }
@@ -437,13 +445,16 @@ a {
         font-size: 54px;
 
     }
+
     .main__content h2 {
         font-size: 27px;
     }
+
     .main__content p {
         font-size: 22px;
     }
-    .main__img--container{
-        height:250px;
+
+    .main__img--container {
+        height: 250px;
     }
 }
