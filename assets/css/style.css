@@ -290,7 +290,11 @@ a {
     margin-top:10px;
 }
 @media screen and (max-width:960px) {
-
+    .page__holder {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px 100vh repeat(3, 150vh) 50vh;
+    }
     .navbar__container {
         padding: 0;
     }
@@ -382,7 +386,21 @@ a {
         height: 250px;
         margin: 50px;
     }
-
+    /*services section*/
+    .services{
+        padding:0 25px;
+    }
+    .services__wrapper{
+        flex-direction: column;
+    }
+    .services__card{
+        width:90%;
+        margin:20px 0;
+    }
+     /*services*/
+     .services h1 {
+        margin-bottom:0;
+    }
 }
 
 /*tablet queres*/
@@ -395,6 +413,11 @@ a {
 
 /*mobile queres*/
 @media screen and (max-width:415px) {
+    .page__holder {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px 100vh 150vh 310vh 150vh 50vh;
+    }
     .navbar__container {
         font-size: 30px;
     }
@@ -432,9 +455,22 @@ a {
         margin: 0;
         margin-top: 100px;
     }
+       /*services*/
+       .services h1{
+        font-size:78px;
+    }
+    .services h2{
+        font-size:36px;
+    }
+    .services p,
+    .services__btn{
+        font-size:30px;
+    }
+   
 }
 
 @media screen and (max-width:376px) {
+   
     .navbar__container {
         font-size: 28px;
     }
@@ -476,10 +512,22 @@ a {
         margin: 0;
         margin-bottom: 100px;
     }
+       /*services*/
+       .services h1{
+        font-size:70px;
+    }
+    .services h2{
+        font-size:32px;
+    }
+    .services p,
+    .services__btn{
+        font-size:26px;
+    }
 
 }
 
 @media screen and (max-width:361px) {
+ 
     .navbar__container {
         font-size: 28px;
     }
@@ -518,11 +566,21 @@ a {
     .main__content h2 {
         font-size: 31px;
     }
+    /*services*/
+    .services h1{
+        font-size:70px;
+    }
+    .services h2{
+        font-size:31px;
+    }
+    .services p,
+    .services__btn{
+        font-size:25px;
+    }
 
 }
 
 @media screen and (max-width:321px) {
- 
     .navbar__container {
         font-size: 25px;
     }
@@ -544,4 +602,17 @@ a {
     .main__img--container {
         height: 250px;
     }
+    /*services*/
+    .services h1{
+        font-size:60px;
+    }
+    .services h2{
+        font-size:27px;
+    }
+    .services p,
+    .services__btn{
+        font-size:20px;
+    }
+    
+    
 }
