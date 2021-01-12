@@ -17,7 +17,7 @@
 .page__holder {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 80px 100vh 150vh repeat(2, 130vh) 80vh;
+    grid-template-rows: 80px 100vh 100vh  130vh 100vh 80vh;
     grid-column-gap: 0px;
     grid-row-gap: 5px;
 }
@@ -414,13 +414,11 @@ box-sizing: border-box;
 }
 
 @media screen and (max-width:960px) {
-    .footer{
-        display: none;
-    }
     .page__holder {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 80px 100vh repeat(3, 150vh) 50vh;
+        grid-template-rows: 80px 100vh repeat(3, 150vh) 200vh;
+        overflow: hidden;
     }
 
     .navbar__container {
@@ -533,6 +531,15 @@ box-sizing: border-box;
     .services h1 {
         margin-bottom: 0;
     }
+    /*footer section*/
+   
+    .footer__link--wrapper{
+        flex-direction: column;
+    }
+    .social__media--wrap{
+        flex-direction: column;
+    }
+
 }
 
 /*tablet queres*/
@@ -548,7 +555,7 @@ box-sizing: border-box;
     .page__holder {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 80px 100vh 150vh 310vh 150vh 50vh;
+        grid-template-rows: 80px 100vh 150vh 310vh 150vh 200vh;
     }
 
     .navbar__container {
@@ -602,6 +609,31 @@ box-sizing: border-box;
     .services__btn {
         font-size: 30px;
     }
+            /*footer*/
+            .footer__links--items{
+                width:100%;
+            }
+            .social__icons{
+                margin-top:20px;
+            }
+            #footer__logo{
+                margin-bottom:10px;
+            }
+            .page__holder {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 80px 100vh 150vh 310vh 150vh 105vh;
+            }
+            .social__media--wrap {
+                margin: 20px auto 0 auto;
+            }
+            .footer__links {
+                margin-top: 25px;
+            }
+            .footer__links--items {
+                width: 120px;
+               
+            }
 
 }
 
@@ -719,10 +751,17 @@ box-sizing: border-box;
     .services__btn {
         font-size: 25px;
     }
-
+        /*footer*/
+        .page__holder {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 80px 100vh 150vh 310vh 150vh 115vh;
+        }
+   
 }
 
 @media screen and (max-width:321px) {
+    
     .navbar__container {
         font-size: 25px;
     }
@@ -759,5 +798,10 @@ box-sizing: border-box;
         font-size: 20px;
     }
 
-
+    /*footer*/
+    .page__holder {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px 100vh 150vh 310vh 150vh 125vh;
+    }
 }

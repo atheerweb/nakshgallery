@@ -5,3 +5,4 @@ document.querySelector(".mobile__toggle").addEventListener('click', function () 
     navbarMenu.classList.toggle("active")
     navbarToggle.classList.toggle("isactive")
 });
+
