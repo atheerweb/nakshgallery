@@ -19,7 +19,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: 80px 100vh 100vh  130vh 100vh 80vh;
     grid-column-gap: 0px;
-    grid-row-gap: 5px;
+    grid-row-gap: 0px;
 }
 
 nav {
@@ -805,3 +805,5 @@ box-sizing: border-box;
         grid-template-rows: 80px 100vh 150vh 310vh 150vh 125vh;
     }
 }
+
+
