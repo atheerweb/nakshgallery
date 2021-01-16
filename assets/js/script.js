@@ -9,3 +9,11 @@ document.querySelector(".mobile__toggle").addEventListener('click', function () 
     navbarMenu.classList.toggle("active")
     navbarToggle.classList.toggle("isactive")
 });
+
+
+
+function area (a , b){
+return a * b;
+}
+
+area ( 10 , 11)
