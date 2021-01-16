@@ -17,7 +17,7 @@
 .page__holder {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 80px 100vh 100vh  130vh 100vh 80vh;
+    grid-template-rows: 80px 100vh 120vh  130vh 100vh 80vh;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
