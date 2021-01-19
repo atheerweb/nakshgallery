@@ -80,25 +80,43 @@ nav {
     padding: 0 50px;
     margin: 0 auto;
     font-size: 1.3rem;
+    height:100%;
 }
 
 .navbar__item {
     list-style-type: none;
+    height: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content:center;
+   align-items:center;
+   text-align: center;
 }
 
-a {
-    color: black;
+.navbar__item .navbar__links{
     text-decoration: none;
+    color:black;
+    height: 100%;
+    text-align:center;
+    margin: auto 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 350ms ease;
 }
+
 
 .navbar__logolink {
     font-size: 2.5rem;
     font-weight: bold;
+    text-decoration:none;
+    color:black;
 }
 
 .navbar__menu {
     display: flex;
     align-items: center;
+    height: 100%;
 }
 
 .navbar__item:nth-child(1) {
@@ -119,12 +137,17 @@ a {
 
 .navbar__button .navbar__links {
     color: white;
+    height:100%;
+    text-decoration: none;
 }
 
 .navbar__button:hover {
     transition: all 350ms ease;
 }
-
+.highlight {
+    transition: all 350ms ease;
+    border-bottom: 4px solid black;
+}
 /*hero section*/
 .hero{
     background-color: rgba(10, 10, 10, 0.6);
@@ -178,9 +201,8 @@ a {
     color: white;
 }
 
-.highlight {
-    border-bottom: 4px solid black;
-}
+
+
 
 
 /*main__section*/
@@ -362,6 +384,7 @@ a {
     display: flex;
     align-items: center;
     cursor: pointer;
+    text-decoration: none;
 }
 .footer__links{
     width:100%;
@@ -389,6 +412,7 @@ box-sizing: border-box;
     color:white;
     margin-bottom:0.5rem;
     transition:all 350ms ease-out;
+    text-decoration: none;
 }
 .footer__links--items a:hover{
     cursor: pointer;
