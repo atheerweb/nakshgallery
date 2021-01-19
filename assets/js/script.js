@@ -6,10 +6,21 @@ const navLogo = document.querySelector("#navbar__logo")
 
 
 // Display mobile menu
-document.querySelector(".mobile__toggle").addEventListener('click',  () => {
+
+
+const activeMenu = () => {
     navbarMenu.classList.toggle("active")
     navbarToggle.classList.toggle("isactive")
-});
+}
+document.querySelector(".mobile__toggle").addEventListener('click',activeMenu);
+
+
+// Hide mobile menu when clicking on links
+
+navbarMenu.addEventListener('click',activeMenu);
+
+
+
 
 
 // Show active menu when scrolling
@@ -20,7 +31,9 @@ const highlightMenu = () => {
     const aboutMenu = document.querySelector('#aboutus-page')
     const serviceMenu = document.querySelector('#services-page')
     let scrollP = window.scrollY
-    console.log(scrollP)
+
+    
+   // to know scroll breakpoints console.log(scrollP)
 
  //adding highlight class
  if(window.innerWidth > 960 && scrollP < 168){
@@ -44,3 +57,5 @@ const highlightMenu = () => {
 }
 window.addEventListener('scroll' , highlightMenu)
 window.addEventListener('click' , highlightMenu)
+
+
