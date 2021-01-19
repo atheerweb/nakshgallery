@@ -1,19 +1,14 @@
-//responsive menu 
 
-var navbarMenu = document.querySelector(".navbar__menu");
-var navbarToggle = document.querySelector("#mobile-menu")
-var navLogo = document.querySelector("#navbar__logo")
+const navbarMenu = document.querySelector(".navbar__menu");
+const navbarToggle = document.querySelector("#mobile-menu")
+const navLogo = document.querySelector("#navbar__logo")
 
 
-document.querySelector(".mobile__toggle").addEventListener('click', function () {
+
+// Display mobile menu
+document.querySelector(".mobile__toggle").addEventListener('click',  () => {
     navbarMenu.classList.toggle("active")
     navbarToggle.classList.toggle("isactive")
 });
 
 
-
-function area (a , b){
-return a * b;
-}
-
-area ( 10 , 11)
